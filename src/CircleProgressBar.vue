@@ -69,6 +69,12 @@ const props = defineProps({
     type: Boolean,
     required: false,
     default: false
+  },
+
+  animationDuration: {
+    type: String,
+    required: false,
+    default: '0.5s'
   }
 });
 
@@ -119,7 +125,7 @@ const getPercentage = computed(() => {
 
 .circle-progress__line--top {
   animation-name: filling;
-  animation-duration: 0.5s;
+  animation-duration: v-bind("props.animationDuration");
   animation-timing-function: ease-in;
   transition: 0.5s all;
 }
