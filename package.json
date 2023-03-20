@@ -1,7 +1,7 @@
 {
   "name": "vue3-m-circle-progress-bar",
   "private": false,
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "mkolsv <mwkolosov@gmail.com> (https://github.com/mkolsv)",
   "files": [
     "dist"
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZipifyApps/zipify-colorpicker"
+    "url": "https://github.com/mkolsv/vue3-m-circle-progress-bar"
   },
   "main": "./dist/umd.js",
   "module": "./dist/es.js",
