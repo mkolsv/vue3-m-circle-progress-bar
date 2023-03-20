@@ -1,5 +1,6 @@
 <template>
 <div class="circle-wrapper">
+  <img src="./assets/vue.svg">
   <h1 class="circle-title">MCircle Progress Bar</h1>
   <p>for Vue 3</p>
   <p>Highly customizable & lightweight circular progressbar component for Vue 3, built with SVG and extensively customizable</p>
