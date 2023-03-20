@@ -75,6 +75,12 @@ const props = defineProps({
     type: String,
     required: false,
     default: '0.5s'
+  },
+
+  strokeWidth: {
+    type: String,
+    required: false,
+    default: '5px'
   }
 });
 
@@ -115,7 +121,7 @@ const getPercentage = computed(() => {
 
 .circle-progress__circle {
   fill: transparent;
-  stroke-width: 5px;
+  stroke-width: v-bind("props.strokeWidth");
 }
 
 .circle-progress__line--back {

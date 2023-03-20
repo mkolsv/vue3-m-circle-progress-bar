@@ -5,7 +5,7 @@
 Hi! 
 Highly customizable & lightweight & responsive circular progressbar component for Vue 3, built with SVG and extensively customizable.
 
-***Only 12 Kb!!***
+***Only 14 Kb!!***
 
 ## Installation
 
@@ -36,6 +36,7 @@ You can customize your progress bars as you want. For example:
 |percentage      | `BooleaN`           | Show percentage                  |
 |rounded         | `BooleaN`           | Rounding the circle line         |
 |animationDuration   | `String`            | Animation Duration               |
+|strokeWidth   | `String`            | Circle Stroke width              |
 
 
 ## Other
