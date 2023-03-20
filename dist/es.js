@@ -1,18 +1,19 @@
-import { useCssVars as b, unref as a, computed as c, ref as d, openBlock as _, createElementBlock as p, createElementVNode as t, normalizeClass as V, normalizeStyle as S, toDisplayString as w, createCommentVNode as k, renderSlot as $, withDirectives as m, vModelText as h, createVNode as P, pushScopeId as q, popScopeId as A, createApp as I } from "vue";
-const y = (r, e) => {
-  const s = r.__vccOpts || r;
+import { useCssVars as B, unref as a, computed as r, ref as p, openBlock as _, createElementBlock as d, createElementVNode as s, normalizeClass as w, normalizeStyle as D, toDisplayString as j, createCommentVNode as C, renderSlot as b, withDirectives as h, vModelText as I, createVNode as z, pushScopeId as S, popScopeId as Z, createApp as T } from "vue";
+const L = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBhcmlhLWhpZGRlbj0idHJ1ZSIgcm9sZT0iaW1nIiBjbGFzcz0iaWNvbmlmeSBpY29uaWZ5LS1sb2dvcyIgd2lkdGg9IjM3LjA3IiBoZWlnaHQ9IjM2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCBtZWV0IiB2aWV3Qm94PSIwIDAgMjU2IDE5OCI+PHBhdGggZmlsbD0iIzQxQjg4MyIgZD0iTTIwNC44IDBIMjU2TDEyOCAyMjAuOEwwIDBoOTcuOTJMMTI4IDUxLjJMMTU3LjQ0IDBoNDcuMzZaIj48L3BhdGg+PHBhdGggZmlsbD0iIzQxQjg4MyIgZD0ibTAgMGwxMjggMjIwLjhMMjU2IDBoLTUxLjJMMTI4IDEzMi40OEw1MC41NiAwSDBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzM1NDk1RSIgZD0iTTUwLjU2IDBMMTI4IDEzMy4xMkwyMDQuOCAwaC00Ny4zNkwxMjggNTEuMkw5Ny45MiAwSDUwLjU2WiI+PC9wYXRoPjwvc3ZnPg==";
+const f = (t, e) => {
+  const c = t.__vccOpts || t;
   for (const [n, l] of e)
-    s[n] = l;
-  return s;
-}, F = { class: "circle-progress" }, M = {
+    c[n] = l;
+  return c;
+}, P = { class: "circle-progress" }, U = {
   class: "circle-progress__svg",
   viewBox: "0 0 104 104",
   width: "104",
   height: "104"
-}, N = ["r"], z = ["r"], D = { class: "circle-progress__content" }, U = {
+}, k = ["r"], A = ["r"], N = { class: "circle-progress__content" }, V = {
   key: 0,
   class: "circle-progress__percentage"
-}, E = {
+}, G = {
   __name: "CircleProgressBar",
   props: {
     max: {
@@ -44,93 +45,94 @@ const y = (r, e) => {
       default: !1
     }
   },
-  setup(r) {
-    const e = r;
-    b((g) => ({
+  setup(t) {
+    const e = t;
+    B((m) => ({
       29829665: a(u),
       "1e05c207": a(v),
       "45d505a5": e.colorFilled,
       "38f6f8be": e.colorUnfilled
     }));
-    const s = c(() => e.max <= e.value), n = c(() => ({
+    const c = r(() => e.max <= e.value), n = r(() => ({
       "circle-progress__line--top--rounded": e.rounded,
-      "circle-progress__line--filled": s.value,
-      "circle-progress__line--unfilled": !s.value
-    })), l = c(() => ({
+      "circle-progress__line--filled": c.value,
+      "circle-progress__line--unfilled": !c.value
+    })), l = r(() => ({
       strokeDashoffset: v.value,
       strokeDasharray: u.value
-    })), o = c(() => s.value ? e.max : e.value), C = d(null), f = d(48), u = c(() => f.value * Math.PI * 2), v = c(() => u.value - u.value * o.value / e.max), B = c(() => Math.floor(e.value / e.max * 100) + "%");
-    return (g, X) => (_(), p("div", F, [
-      (_(), p("svg", M, [
-        t("circle", {
+    })), o = r(() => c.value ? e.max : e.value), M = p(null), g = p(48), u = r(() => g.value * Math.PI * 2), v = r(() => u.value - u.value * o.value / e.max), x = r(() => Math.floor(e.value / e.max * 100) + "%");
+    return (m, K) => (_(), d("div", P, [
+      (_(), d("svg", U, [
+        s("circle", {
           class: "circle-progress__circle circle-progress__line--back",
-          r: f.value,
+          r: g.value,
           cx: "52",
           cy: "52"
-        }, null, 8, N),
-        t("circle", {
-          class: V(["circle-progress__circle circle-progress__line--top", a(n)]),
-          style: S(a(l)),
+        }, null, 8, k),
+        s("circle", {
+          class: w(["circle-progress__circle circle-progress__line--top", a(n)]),
+          style: D(a(l)),
           ref_key: "fillingCircle",
-          ref: C,
-          r: f.value,
+          ref: M,
+          r: g.value,
           cx: "52",
           cy: "52",
           transform: "rotate(-270 52 52)"
-        }, null, 14, z)
+        }, null, 14, A)
       ])),
-      t("div", D, [
-        r.percentage ? (_(), p("span", U, w(a(B)), 1)) : k("", !0),
-        $(g.$slots, "default", {}, void 0, !0)
+      s("div", N, [
+        t.percentage ? (_(), d("span", V, j(a(x)), 1)) : C("", !0),
+        b(m.$slots, "default", {}, void 0, !0)
       ])
     ]));
   }
-}, x = /* @__PURE__ */ y(E, [["__scopeId", "data-v-6c5cf986"]]);
-const i = (r) => (q("data-v-f9b39818"), r = r(), A(), r), O = { class: "circle-wrapper" }, G = /* @__PURE__ */ i(() => /* @__PURE__ */ t("h1", { class: "circle-title" }, "MCircle Progress Bar", -1)), H = /* @__PURE__ */ i(() => /* @__PURE__ */ t("p", null, "for Vue 3", -1)), L = /* @__PURE__ */ i(() => /* @__PURE__ */ t("p", null, "Highly customizable & lightweight circular progressbar component for Vue 3, built with SVG and extensively customizable", -1)), R = { class: "circle-inputs" }, T = { class: "circle-input__wrapper" }, j = /* @__PURE__ */ i(() => /* @__PURE__ */ t("p", { class: "circle-input__title circle-input__current" }, "Current Value", -1)), J = { class: "circle-input__wrapper" }, K = /* @__PURE__ */ i(() => /* @__PURE__ */ t("p", { class: "circle-input__title circle-input__max" }, "Max Value", -1)), Q = {
+}, y = /* @__PURE__ */ f(G, [["__scopeId", "data-v-6c5cf986"]]);
+const i = (t) => (S("data-v-5c1a02c6"), t = t(), Z(), t), W = { class: "circle-wrapper" }, O = /* @__PURE__ */ i(() => /* @__PURE__ */ s("img", { src: L }, null, -1)), H = /* @__PURE__ */ i(() => /* @__PURE__ */ s("h1", { class: "circle-title" }, "MCircle Progress Bar", -1)), E = /* @__PURE__ */ i(() => /* @__PURE__ */ s("p", null, "for Vue 3", -1)), F = /* @__PURE__ */ i(() => /* @__PURE__ */ s("p", null, "Highly customizable & lightweight circular progressbar component for Vue 3, built with SVG and extensively customizable", -1)), J = { class: "circle-inputs" }, Q = { class: "circle-input__wrapper" }, $ = /* @__PURE__ */ i(() => /* @__PURE__ */ s("p", { class: "circle-input__title circle-input__current" }, "Current Value", -1)), q = { class: "circle-input__wrapper" }, R = /* @__PURE__ */ i(() => /* @__PURE__ */ s("p", { class: "circle-input__title circle-input__max" }, "Max Value", -1)), X = {
   __name: "App",
-  setup(r) {
-    const e = d(20), s = d(100);
-    return (n, l) => (_(), p("div", O, [
-      G,
+  setup(t) {
+    const e = p(20), c = p(100);
+    return (n, l) => (_(), d("div", W, [
+      O,
       H,
-      L,
-      t("div", R, [
-        t("div", T, [
-          j,
-          m(t("input", {
+      E,
+      F,
+      s("div", J, [
+        s("div", Q, [
+          $,
+          h(s("input", {
             class: "circle-input",
             "onUpdate:modelValue": l[0] || (l[0] = (o) => e.value = o),
             type: "text"
           }, null, 512), [
-            [h, e.value]
+            [I, e.value]
           ])
         ]),
-        t("div", J, [
-          K,
-          m(t("input", {
+        s("div", q, [
+          R,
+          h(s("input", {
             class: "circle-input",
-            "onUpdate:modelValue": l[1] || (l[1] = (o) => s.value = o),
+            "onUpdate:modelValue": l[1] || (l[1] = (o) => c.value = o),
             type: "text"
           }, null, 512), [
-            [h, s.value]
+            [I, c.value]
           ])
         ])
       ]),
-      P(x, {
+      z(y, {
         value: e.value,
-        max: s.value,
+        max: c.value,
         percentage: "",
         rounded: ""
       }, null, 8, ["value", "max"])
     ]));
   }
-}, W = /* @__PURE__ */ y(Q, [["__scopeId", "data-v-f9b39818"]]);
-I(W).mount("#app");
-const Z = {
-  install: (r, e) => {
-    r.component("CircleProgressBar", x);
+}, Y = /* @__PURE__ */ f(X, [["__scopeId", "data-v-5c1a02c6"]]);
+T(Y).mount("#app");
+const se = {
+  install: (t, e) => {
+    t.component("CircleProgressBar", y);
   }
 };
 export {
-  Z as default
+  se as default
 };
