@@ -113,7 +113,7 @@ const getPercentage = computed(() => {
 
 </script>
 
-<style scoped>
+<style>
 @keyframes filling {
   from { stroke-dashoffset: v-bind("dashArray"); }
   to { stroke-dashoffset: v-bind("dashOffset"); }
