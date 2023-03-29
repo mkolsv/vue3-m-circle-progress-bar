@@ -16,7 +16,6 @@ npm install --save vue3-m-circle-progress-bar
 
 ```
 import  CircleProgressBar from 'vue3-m-circle-progress-bar';
-import 'vue3-m-circle-progress-bar/style.css'
 
 <CircleProgressBar :value="7" :max="10" />
 ```
