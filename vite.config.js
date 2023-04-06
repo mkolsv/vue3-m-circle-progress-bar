@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import { resolve } from 'path';
+import dts from 'vite-plugin-dts'
 import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
+import { resolve } from 'path';
 
 
 // https://vitejs.dev/config/
@@ -22,5 +23,7 @@ export default defineConfig({
       }
     }
   },
-  plugins: [vue(), cssInjectedByJsPlugin()],
+  plugins: [vue(), cssInjectedByJsPlugin(), dts({
+    insertTypesEntry: true,
+  })],
 })
