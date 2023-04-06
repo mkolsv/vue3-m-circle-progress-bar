@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     cssCodeSplit: false,
     lib: {
-      entry: resolve(__dirname, 'src/index.js'),
+      entry: resolve(__dirname, 'src/index.ts'),
       name: 'MCircleProgressBar',
       fileName: (format) => `${format}.js`
     },
