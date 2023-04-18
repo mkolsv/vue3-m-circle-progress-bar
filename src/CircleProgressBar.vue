@@ -81,6 +81,12 @@ const props = defineProps({
     type: String,
     required: false,
     default: '5px'
+  },
+
+    reversedFilling: {
+    type: Boolean,
+    required: false,
+    default: false
   }
 });
 
@@ -105,7 +111,10 @@ const currentFormatted = computed(() => isLimitReached.value ? props.max : props
 const fillingCircle = ref(null);
 const radius = ref(48);
 const dashArray = computed(() => radius.value * Math.PI * 2);
-const dashOffset = computed(() => dashArray.value - dashArray.value * currentFormatted.value / props.max);
+const dashOffset = computed(() => {
+  if (props.reversedFilling) return dashArray.value - dashArray.value * (props.max - currentFormatted.value) / props.max;
+  return dashArray.value - dashArray.value * currentFormatted.value / props.max
+});
 
 const getPercentage = computed(() => {
   return Math.floor(props.value / props.max * 100) + '%';
