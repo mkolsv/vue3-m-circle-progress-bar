@@ -35,6 +35,7 @@ You can customize your progress bars as you want. For example:
 |rounded         | `BooleaN`           | Rounding the circle line         |
 |animationDuration   | `String`            | Animation Duration               |
 |strokeWidth   | `String`            | Circle Stroke width              |
+|reversedFilling   | `Boolean`           | Enable reversed filling          |
 
 
 ## Other
