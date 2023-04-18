@@ -83,7 +83,7 @@ const props = defineProps({
     default: '5px'
   },
 
-    reversedFilling: {
+  reversedFilling: {
     type: Boolean,
     required: false,
     default: false
