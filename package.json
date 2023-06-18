@@ -1,7 +1,7 @@
 {
   "name": "vue3-m-circle-progress-bar",
   "private": false,
-  "version": "0.6.0",
+  "version": "0.6.1",
   "author": "mkolsv <mwkolosov@gmail.com> (https://github.com/mkolsv)",
   "files": [
     "dist"

@@ -2,10 +2,10 @@
 
 ![Circle Progress Bar](https://lh6.googleusercontent.com/fLQLNNyHZoBeyAkqRDEBqZwm5GN_ROBnm0OVIiZ4gw4DJa6i2KbGwiOisZl6UdyA9c4=w2400)
 
-Hi! 
-Highly customizable & lightweight & responsive circular progressbar component for Vue 3, built with SVG and extensively customizable.
+~~Hi!~~ 
+~~Highly customizable & lightweight & responsive circular progressbar component for Vue 3, built with SVG and extensively customizable.~~
 
-***Only 9 Kb!!***
+### _DEPRECATED!!!! USE INSTEAD A NEW PACKAGE_ - https://www.npmjs.com/package/circle-progress.vue
 
 ## Installation
 

@@ -20,17 +20,30 @@
       :max="max"
       percentage
       rounded
+      reversed-filling
   />
 </div>
 </template>
 
 <script setup>
 import CircleProgressBar from './CircleProgressBar.vue';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
-const value = ref(20);
+let value = ref(100);
 
 const max = ref(100);
+
+const decrease = () => {
+    setTimeout(() => {
+        value.value = value.value - 1;
+
+        if (value.value !== 0) decrease();
+    }, 30);
+}
+
+onMounted(() => {
+    decrease();
+});
 </script>
 
 <style scoped>
